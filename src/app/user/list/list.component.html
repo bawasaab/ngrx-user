@@ -1,0 +1,19 @@
+<!-- <p>list works!</p> -->
+<table class="table table-hover" style="border-style: 1px solid black;">
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users$ | async">
+      <td>{{user.id}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.usrname}}</td>
+      <td>action</td>
+    </tr>
+  </tbody>
+</table>

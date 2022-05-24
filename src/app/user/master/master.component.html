@@ -1,0 +1,31 @@
+<!-- <p>master works!</p> -->
+
+<form #usrFrm="ngForm" (ngSubmit)="handleSubmit( usrFrm );">
+  <label for="email">Email:</label><br>
+  <input
+    type="email"
+    required
+    minlength="3"
+
+    ngModel
+    name="email"
+
+    #email="ngModel"
+
+    id="email"
+    ><br>
+  <label for="usrname">UsrName:</label><br>
+  <input
+    type="text"
+    required
+    minlength="3"
+
+    ngModel
+    name="usrname"
+
+    #usrname="ngModel"
+
+    id="usrname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>{{ usrFrm.value | json }}</p>

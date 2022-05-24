@@ -1,0 +1,17 @@
+<p>
+  <a routerLink="/user/list">List</a>
+</p>
+<p>
+  <a routerLink="/user/insert">insert</a>
+</p>
+<p>
+  <a routerLink="/counter">counter</a>
+</p>
+
+<button (click)="increment()">Increment</button>
+
+<div>Current Count: {{ count$ | async }}</div>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>
